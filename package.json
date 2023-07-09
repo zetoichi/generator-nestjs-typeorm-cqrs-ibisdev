@@ -22,6 +22,8 @@
     "@changesets/cli": "^2.26.2",
     "@types/escodegen": "^0.0.7",
     "@types/yeoman-generator": "^5.2.11",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.6.0",
     "eslint-config-xo": "^0.27.2",
@@ -34,6 +36,7 @@
     "tsconfig-paths": "^4.2.0",
     "tsup": "^7.1.0",
     "typescript": "^5.0.4",
+    "webpack-cli": "^5.1.4",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^1.7.0",
     "yo": "^4.3.1"

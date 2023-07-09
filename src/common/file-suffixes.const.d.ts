@@ -1,0 +1,12 @@
+export declare const MODULE_FILE_SUFFIX = "module.ts";
+export declare const INTERFACE_FILE_SUFFIX = "interface.ts";
+export declare const ENTITY_FILE_SUFFIX = "entity.ts";
+export declare const DTO_FILE_SUFFIX = "dto.ts";
+export declare const CONTROLLER_FILE_SUFFIX = "controller.ts";
+export declare const SERVICE_FILE_SUFFIX = "service.ts";
+export declare const COMMAND_FILE_SUFFIX = "command.ts";
+export declare const COMMAND_HANDLER_FILE_SUFFIX = "handler.ts";
+export declare const QUERY_FILE_SUFFIX = "event.ts";
+export declare const QUERY_HANDLER_FILE_SUFFIX = "query-handler.ts";
+export declare const EVENT_FILE_SUFFIX = "query.ts";
+export declare const EVENT_HANDLER_FILE_SUFFIX = "event-handler.ts";

@@ -25,18 +25,18 @@
     "esm": true,
     "experimentalSpecifierResolution": "node"
   },
-  "include": ["src//**/*.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": [
     "node_modules",
     "dist",
     "**/*.spec.ts",
-    "app/templates",
-    "command/templates",
-    "controller/templates",
-    "dto/templates",
-    "entity/templates",
-    "interface/templates",
-    "module/templates",
-    "query/templates"
+    "src/app/templates",
+    "src/command/templates",
+    "src/controller/templates",
+    "src/dto/templates",
+    "src/entity/templates",
+    "src/interface/templates",
+    "src/module/templates",
+    "src/query/templates"
   ]
 }

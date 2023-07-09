@@ -1,0 +1,12 @@
+export declare const MODULE_TEMPLATE_PATH = "module.template.ts";
+export declare const INTERFACE_TEMPLATE_PATH = "interface.template.ts";
+export declare const ENTITY_TEMPLATE_PATH = "entity.template.ts";
+export declare const DTO_TEMPLATE_PATH = "dto.template.ts";
+export declare const CONTROLLER_TEMPLATE_PATH = "controller.template.ts";
+export declare const SERVICE_TEMPLATE_PATH = "service.template.ts";
+export declare const COMMAND_TEMPLATE_PATH = "command.template.ts";
+export declare const COMMAND_HANDLER_TEMPLATE_PATH = "commandHandler.template.ts";
+export declare const QUERY_TEMPLATE_PATH = "query.template.ts";
+export declare const QUERY_HANDLER_TEMPLATE_PATH = "queryHandler.template.ts";
+export declare const EVENT_TEMPLATE_PATH = "event.template.ts";
+export declare const EVENT_HANDLER_TEMPLATE_PATH = "eventHandler.template.ts";
