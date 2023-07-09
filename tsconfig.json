@@ -9,7 +9,7 @@
     "noLib": false,
     "esModuleInterop": true,
     "sourceMap": true,
-    // "incremental": true,
+    "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
@@ -26,6 +26,6 @@
     "esm": true,
     "experimentalSpecifierResolution": "node"
   },
-  "include": ["generators/**/*.ts"],
+  "include": ["src/generators/**/*.ts"],
   "exclude": ["node_modules", "dist", "**/*.spec.ts"]
 }

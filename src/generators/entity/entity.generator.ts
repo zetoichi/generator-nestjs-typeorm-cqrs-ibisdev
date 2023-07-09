@@ -13,7 +13,7 @@ interface EntityGeneratorOpts {
   name: string;
 }
 
-export default class EntityGenerator extends Generator {
+export class EntityGenerator extends Generator {
   conf: IConf = {};
 
   constructor(args: string | string[], opts: EntityGeneratorOpts) {

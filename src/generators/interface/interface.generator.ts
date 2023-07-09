@@ -4,34 +4,34 @@ import { kebabToPascal } from "../../utils/case-change";
 import { getNames } from "../../utils";
 import {
   IConf,
-  MODULE_DEST_FOLDER,
-  MODULE_FILE_SUFFIX,
-  MODULE_TEMPLATE_PATH
+  INTERFACE_DEST_FOLDER,
+  INTERFACE_FILE_SUFFIX,
+  INTERFACE_TEMPLATE_PATH
 } from "../../common";
 
-interface ModuleGeneratorOpts {
+interface InterfaceGeneratorOpts {
   name: string;
 }
 
-export default class ModuleGenerator extends Generator {
+export class InterfaceGenerator extends Generator {
   conf: IConf = {};
 
-  constructor(args: string | string[], opts: ModuleGeneratorOpts) {
+  constructor(args: string | string[], opts: InterfaceGeneratorOpts) {
     super(args, opts);
     this.argument("name", { type: String, required: true });
   }
 
   initializing() {
-    this.log(chalk.yellow("Generating Module..."));
+    this.log(chalk.yellow("Generating Interface..."));
 
     this.conf.names = getNames(this.options.name);
   }
 
   writing() {
     this.fs.copyTpl(
-      this.templatePath(MODULE_TEMPLATE_PATH),
+      this.templatePath(INTERFACE_TEMPLATE_PATH),
       this.destinationPath(
-        `${MODULE_DEST_FOLDER}${this.options.name}.${MODULE_FILE_SUFFIX}`
+        `${INTERFACE_DEST_FOLDER}${this.options.name}.${INTERFACE_FILE_SUFFIX}`
       ),
       { kebabToPascal, config: this.conf }
     );

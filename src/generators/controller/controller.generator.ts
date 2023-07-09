@@ -3,35 +3,35 @@ import chalk from "chalk";
 import { kebabToPascal } from "../../utils/case-change";
 import { getNames } from "../../utils";
 import {
-  IConf,
-  INTERFACE_DEST_FOLDER,
-  INTERFACE_FILE_SUFFIX,
-  INTERFACE_TEMPLATE_PATH
+  CONTROLLER_DEST_FOLDER,
+  CONTROLLER_FILE_SUFFIX,
+  CONTROLLER_TEMPLATE_PATH,
+  IConf
 } from "../../common";
 
-interface InterfaceGeneratorOpts {
+interface ControllerGeneratorOpts {
   name: string;
 }
 
-export default class InterfaceGenerator extends Generator {
+export class ControllerGenerator extends Generator {
   conf: IConf = {};
 
-  constructor(args: string | string[], opts: InterfaceGeneratorOpts) {
+  constructor(args: string | string[], opts: ControllerGeneratorOpts) {
     super(args, opts);
     this.argument("name", { type: String, required: true });
   }
 
   initializing() {
-    this.log(chalk.yellow("Generating Interface..."));
+    this.log(chalk.yellow("Generating Controller..."));
 
     this.conf.names = getNames(this.options.name);
   }
 
   writing() {
     this.fs.copyTpl(
-      this.templatePath(INTERFACE_TEMPLATE_PATH),
+      this.templatePath(CONTROLLER_TEMPLATE_PATH),
       this.destinationPath(
-        `${INTERFACE_DEST_FOLDER}${this.options.name}.${INTERFACE_FILE_SUFFIX}`
+        `${CONTROLLER_DEST_FOLDER}${this.options.name}.${CONTROLLER_FILE_SUFFIX}`
       ),
       { kebabToPascal, config: this.conf }
     );

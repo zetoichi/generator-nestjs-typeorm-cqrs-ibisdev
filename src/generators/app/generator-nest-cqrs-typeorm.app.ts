@@ -8,7 +8,7 @@ interface NestGeneratorOpts {
   name: string;
 }
 
-export default class NestGenerator extends Generator {
+export class GeneratorNestCqrsTypeormApp extends Generator {
   answers: { [index: string]: any };
 
   constructor(args: string | string[], opts: NestGeneratorOpts) {
