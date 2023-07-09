@@ -4,10 +4,7 @@
     "declaration": true,
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES6",
-    "lib": ["ES6"],
-    "moduleResolution": "Node",
-    "outDir": "./dist",
+    "target": "ES2017",
     "noLib": false,
     "esModuleInterop": true,
     "sourceMap": true,
@@ -28,7 +25,7 @@
     "esm": true,
     "experimentalSpecifierResolution": "node"
   },
-  "include": ["generators/**/*.ts"],
+  "include": ["src//**/*.ts"],
   "exclude": [
     "node_modules",
     "dist",

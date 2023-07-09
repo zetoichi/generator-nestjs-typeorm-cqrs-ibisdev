@@ -1,13 +1,12 @@
 import Generator from "yeoman-generator";
 import chalk from "chalk";
-import { kebabToPascal } from "../../utils/case-change";
-import { getNames } from "../../utils";
+import { getNames, kebabToPascal } from "../utils";
 import {
   IConf,
   MODULE_DEST_FOLDER,
   MODULE_FILE_SUFFIX,
   MODULE_TEMPLATE_PATH
-} from "../../common";
+} from "../common";
 
 interface ModuleGeneratorOpts {
   name: string;

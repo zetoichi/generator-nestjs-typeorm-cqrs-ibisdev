@@ -3,11 +3,10 @@ import {
   DTO_DEST_FOLDER,
   DTO_TEMPLATE_PATH,
   IConf
-} from "../../common";
+} from "../common";
 import Generator from "yeoman-generator";
 import chalk from "chalk";
-import { kebabToPascal } from "../../utils/case-change";
-import { getNames } from "../../utils";
+import { getNames, kebabToPascal } from "../utils";
 
 interface DtoGeneratorOpts {
   name: string;

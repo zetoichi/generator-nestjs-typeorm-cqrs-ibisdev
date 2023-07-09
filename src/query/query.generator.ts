@@ -11,13 +11,13 @@ import {
   IConf,
   IHandlerAndImpl,
   HandlerType
-} from "../../common";
+} from "../common";
 import {
   kebabToPascal,
   createOrUpdateCqrsBarrels,
   getNames,
   makeCqrsFolders
-} from "../../utils";
+} from "../utils";
 
 
 const ACTION = "get"

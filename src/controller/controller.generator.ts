@@ -1,13 +1,12 @@
 import Generator from "yeoman-generator";
 import chalk from "chalk";
-import { kebabToPascal } from "../../utils/case-change";
-import { getNames } from "../../utils";
+import { getNames, kebabToPascal } from "../utils";
 import {
   CONTROLLER_DEST_FOLDER,
   CONTROLLER_FILE_SUFFIX,
   CONTROLLER_TEMPLATE_PATH,
   IConf
-} from "../../../common";
+} from "../common";
 
 interface ControllerGeneratorOpts {
   name: string;

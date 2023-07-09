@@ -1,5 +1,5 @@
 {
-  "name": "generator-ibis-nestjs-typeorm-cqrs",
+  "name": "generator-nestjs-typeorm-cqrs-ibisdev",
   "version": "0.0.6",
   "description": "Scaffold Nestjs projects usign typeorm and the CQRS pattern.",
   "homepage": "",
@@ -8,19 +8,15 @@
     "email": "alejandro.zapiola@ibisdev.tech"
   },
   "files": [
-    "common",
-    "utils",
     "generators"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "module": "dist/index.mjs",
+  "main": "generators/app/index.js",
   "keywords": [
     "yeoman-generator"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zetoichi/generator-ibis-nestjs-typeorm-cqrs"
+    "url": "git+https://github.com/zetoichi/generator-nestjs-typeorm-cqrs-ibisdev"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
@@ -53,6 +49,7 @@
     "pluralize": "^8.0.0",
     "recast": "^0.23.2",
     "ts-node": "^10.9.1",
+    "webpack": "^5.88.1",
     "yeoman-generator": "^3.1.1",
     "yosay": "^2.0.2"
   },
@@ -97,7 +94,7 @@
     "gen:controller": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:controller",
     "gen:command": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:command",
     "gen:query": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:query",
-    "build": "tsup index.ts --format cjs,esm --dts --minify --clean --sourcemap",
+    "build": "webpack",
     "pretest": "eslint .",
     "test": "jest"
   },

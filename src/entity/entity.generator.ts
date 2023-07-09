@@ -1,13 +1,13 @@
 import chalk from "chalk";
 
 import Generator from "yeoman-generator";
-import { getNames, kebabToPascal } from "../../utils";
+import { getNames, kebabToPascal } from "../utils";
 import {
   ENTITY_DEST_FOLDER,
   ENTITY_FILE_SUFFIX,
   ENTITY_TEMPLATE_PATH,
   IConf
-} from "../../common";
+} from "../common";
 
 interface EntityGeneratorOpts {
   name: string;
