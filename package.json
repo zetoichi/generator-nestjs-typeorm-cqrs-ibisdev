@@ -16,6 +16,10 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetoichi/generator-ibis-nestjs-typeorm-cqrs"
+  },
   "devDependencies": {
     "@types/escodegen": "^0.0.7",
     "@types/yeoman-generator": "^5.2.11",
