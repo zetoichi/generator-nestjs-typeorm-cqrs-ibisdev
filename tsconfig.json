@@ -27,5 +27,17 @@
     "experimentalSpecifierResolution": "node"
   },
   "include": ["generators/**/*.ts"],
-  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts",
+    "app/templates",
+    "command/templates",
+    "controller/templates",
+    "dto/templates",
+    "entity/templates",
+    "interface/templates",
+    "module/templates",
+    "query/templates"
+  ]
 }
