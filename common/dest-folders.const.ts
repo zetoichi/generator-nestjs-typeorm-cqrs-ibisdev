@@ -1,0 +1,12 @@
+export const MODULE_DEST_FOLDER = "";
+export const CONTROLLER_DEST_FOLDER = "";
+export const INTERFACE_DEST_FOLDER = "interfaces/";
+export const ENTITY_DEST_FOLDER = "entities/";
+export const DTO_DEST_FOLDER = "dto/";
+export const SERVICE_DEST_FOLDER = "services/";
+export const COMMAND_DEST_FOLDER = "commands/impl/";
+export const COMMAND_HANDLER_DEST_FOLDER = "commands/handlers/";
+export const QUERY_DEST_FOLDER = "queries/impl/";
+export const QUERY_HANDLER_DEST_FOLDER = "queries/handlers/";
+export const EVENT_DEST_FOLDER = "events/impl/";
+export const EVENT_HANDLER_DEST_FOLDER = "events/handlers/";

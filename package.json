@@ -1,0 +1,93 @@
+{
+  "name": "generator-ibis-nestjs-typeorm-cqrs",
+  "version": "0.0.0",
+  "description": "Scaffold Nestjs projects usign typeorm and the cqrs pattern.",
+  "homepage": "",
+  "author": {
+    "name": "Alejandro Zapiola",
+    "email": "alejandro.zapiola@ibisdev.tech"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "@types/escodegen": "^0.0.7",
+    "@types/yeoman-generator": "^5.2.11",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.6.0",
+    "eslint-config-xo": "^0.27.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "jest": "^26.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.4.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.7.0",
+    "yo": "^4.3.1"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.21.8",
+    "@types/pluralize": "^0.0.29",
+    "chalk": "^2.1.0",
+    "pluralize": "^8.0.0",
+    "recast": "^0.23.2",
+    "ts-node": "^10.9.1",
+    "yeoman-generator": "^3.1.1",
+    "yosay": "^2.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "gen:entity": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:entity",
+    "gen:dto": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:dto",
+    "gen:interface": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:interface",
+    "gen:controller": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:controller",
+    "gen:command": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:command",
+    "pretest": "eslint .",
+    "test": "jest"
+  },
+  "license": "Apache-2.0"
+}
