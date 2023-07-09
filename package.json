@@ -1,7 +1,7 @@
 {
   "name": "generator-ibis-nestjs-typeorm-cqrs",
   "version": "0.0.0",
-  "description": "Scaffold Nestjs projects usign typeorm and the cqrs pattern.",
+  "description": "Scaffold Nestjs projects usign typeorm and the CQRS pattern.",
   "homepage": "",
   "author": {
     "name": "Alejandro Zapiola",
@@ -10,7 +10,9 @@
   "files": [
     "generators"
   ],
-  "main": "generators/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
   "keywords": [
     "yeoman-generator"
   ],
@@ -28,6 +30,7 @@
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.4.2",
     "tsconfig-paths": "^4.2.0",
+    "tsup": "^7.1.0",
     "typescript": "^5.0.4",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^1.7.0",
@@ -87,6 +90,7 @@
     "gen:controller": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:controller",
     "gen:command": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:command",
     "gen:query": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:query",
+    "build": "tsup index.ts --format cjs,esm --dts --minify --clean --sourcemap",
     "pretest": "eslint .",
     "test": "jest"
   },

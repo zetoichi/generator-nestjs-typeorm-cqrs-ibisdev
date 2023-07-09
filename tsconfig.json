@@ -9,7 +9,7 @@
     "noLib": false,
     "esModuleInterop": true,
     "sourceMap": true,
-    "incremental": true,
+    // "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
