@@ -86,6 +86,7 @@
     "gen:interface": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:interface",
     "gen:controller": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:controller",
     "gen:command": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:command",
+    "gen:query": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:query",
     "pretest": "eslint .",
     "test": "jest"
   },
