@@ -7,7 +7,7 @@ import {
   CONTROLLER_FILE_SUFFIX,
   CONTROLLER_TEMPLATE_PATH,
   IConf
-} from "../../common";
+} from "../../../common";
 
 interface ControllerGeneratorOpts {
   name: string;

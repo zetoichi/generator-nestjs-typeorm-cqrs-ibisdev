@@ -26,6 +26,6 @@
     "esm": true,
     "experimentalSpecifierResolution": "node"
   },
-  "include": ["src/generators/**/*.ts"],
+  "include": ["generators/**/*.ts"],
   "exclude": ["node_modules", "dist", "**/*.spec.ts"]
 }

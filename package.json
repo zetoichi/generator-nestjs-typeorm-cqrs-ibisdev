@@ -1,6 +1,6 @@
 {
   "name": "generator-ibis-nestjs-typeorm-cqrs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Scaffold Nestjs projects usign typeorm and the CQRS pattern.",
   "homepage": "",
   "author": {
