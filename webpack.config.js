@@ -20,16 +20,16 @@ fs.readdirSync("node_modules")
 const config = [
   {
     entry: {
-      app: [__dirname + "/src/app/index.ts"],
-      command: [__dirname + "/src/command/index.ts"],
-      common: [__dirname + "/src/common/index.ts"],
-      controller: [__dirname + "/src/controller/index.ts"],
-      dto: [__dirname + "/src/dto/index.ts"],
-      entity: [__dirname + "/src/entity/index.ts"],
-      interface: [__dirname + "/src/interface/index.ts"],
-      module: [__dirname + "/src/module/index.ts"],
-      query: [__dirname + "/src/query/index.ts"],
-      utils: [__dirname + "/src/utils/index.ts"]
+      app: [__dirname + "/app/index.ts"],
+      command: [__dirname + "/command/index.ts"],
+      common: [__dirname + "/common/index.ts"],
+      controller: [__dirname + "/controller/index.ts"],
+      dto: [__dirname + "/dto/index.ts"],
+      entity: [__dirname + "/entity/index.ts"],
+      interface: [__dirname + "/interface/index.ts"],
+      module: [__dirname + "/module/index.ts"],
+      query: [__dirname + "/query/index.ts"],
+      utils: [__dirname + "/utils/index.ts"]
     },
     output: {
       path: __dirname + "/generators/",
@@ -66,42 +66,42 @@ const config = [
       new CopyWebpackPlugin({
         patterns: [
           {
-            from: "src/app/templates",
+            from: "app/templates",
             to: "app/templates",
             info: { minimized: true }
           },
           {
-            from: "src/command/templates",
+            from: "command/templates",
             to: "command/templates",
             info: { minimized: true }
           },
           {
-            from: "src/controller/templates",
+            from: "controller/templates",
             to: "controller/templates",
             info: { minimized: true }
           },
           {
-            from: "src/dto/templates",
+            from: "dto/templates",
             to: "dto/templates",
             info: { minimized: true }
           },
           {
-            from: "src/entity/templates",
+            from: "entity/templates",
             to: "entity/templates",
             info: { minimized: true }
           },
           {
-            from: "src/interface/templates",
+            from: "interface/templates",
             to: "interface/templates",
             info: { minimized: true }
           },
           {
-            from: "src/module/templates",
+            from: "module/templates",
             to: "module/templates",
             info: { minimized: true }
           },
           {
-            from: "src/query/templates",
+            from: "query/templates",
             to: "query/templates",
             info: { minimized: true }
           }

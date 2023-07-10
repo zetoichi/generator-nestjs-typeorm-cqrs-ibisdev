@@ -1,6 +1,6 @@
 {
   "name": "generator-nestjs-typeorm-cqrs-ibisdev",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "description": "Scaffold Nestjs projects usign typeorm and the CQRS pattern.",
   "homepage": "",
   "author": {
@@ -30,7 +30,6 @@
     "eslint-plugin-prettier": "^3.1.1",
     "jest": "^26.1.0",
     "lint-staged": "^9.4.3",
-    "prettier": "^1.19.1",
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.4.2",
     "tsconfig-paths": "^4.2.0",
@@ -49,6 +48,7 @@
     "@types/pluralize": "^0.0.29",
     "chalk": "^2.1.0",
     "pluralize": "^8.0.0",
+    "prettier": "^1.19.1",
     "recast": "^0.23.2",
     "ts-node": "^10.9.1",
     "webpack": "^5.88.1",
@@ -90,12 +90,12 @@
     ]
   },
   "scripts": {
-    "gen:entity": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:entity",
-    "gen:dto": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:dto",
-    "gen:interface": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:interface",
-    "gen:controller": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:controller",
-    "gen:command": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:command",
-    "gen:query": "ts-node node_modules/.bin/yo ibis-nestjs-typeorm-cqrs:query",
+    "gen:entity": "ts-node node_modules/.bin/yo nestjs-typeorm-cqrs-ibisdev:entity",
+    "gen:dto": "ts-node node_modules/.bin/yo nestjs-typeorm-cqrs-ibisdev:dto",
+    "gen:interface": "ts-node node_modules/.bin/yo nestjs-typeorm-cqrs-ibisdev:interface",
+    "gen:controller": "ts-node node_modules/.bin/yo nestjs-typeorm-cqrs-ibisdev:controller",
+    "gen:command": "ts-node node_modules/.bin/yo nestjs-typeorm-cqrs-ibisdev:command",
+    "gen:query": "ts-node node_modules/.bin/yo nestjs-typeorm-cqrs-ibisdev:query",
     "build": "webpack",
     "pretest": "eslint .",
     "test": "jest"

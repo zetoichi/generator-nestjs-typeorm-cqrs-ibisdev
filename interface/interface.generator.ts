@@ -22,8 +22,10 @@ export class InterfaceGenerator extends Generator {
 
   initializing() {
     this.log(chalk.yellow("Generating Interface..."));
-
+    
     this.conf.names = getNames(this.options.name);
+    
+    this.log("######## name: ",this.conf.names.iface)
   }
 
   writing() {
